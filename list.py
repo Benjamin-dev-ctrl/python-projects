@@ -9,4 +9,12 @@ while True:
         tasks.remove(task_rem)
     elif task=='update':
         task_updt=input('what task do you want to update? ')
+        tasks.remove(task_updt)
+        task_replace=input('what should the task be updated to? ')
+        tasks.append(task_replace)
+    elif task=='print':
+        for i in tasks:
+            print(i)
+    else:
+        break
 
