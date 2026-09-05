@@ -1,0 +1,11 @@
+math={'joe','sara','bob','sam','alice','stephen'}
+science={'joe','fredrik','isabelle','hank','alice'}
+english={'joe','fredrik','stephen','samantha','jerome'}
+print(math.intersection(science))
+print(math.union(science))
+print(math.difference(science))
+print(science.difference(math))
+print(math.intersection(science.intersection(english)))
+print(math.union(english.union(science)))
+print(math.intersection(english.difference(science)))
+print(english.difference(math,science))
