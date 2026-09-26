@@ -14,9 +14,6 @@ def randompos():
     duck.pos=(random.randint(0,WIDTH-100),random.randint(0,HEIGHT-100))
     clock.schedule(randompos,2)
 def on_mouse_down(pos):
-    if duck.collidepoint(pos):
-        print('good shot')
-    else:
-        print('bad shot')
+     sponge.pos=pos
 randompos()
 pgzrun.go()
